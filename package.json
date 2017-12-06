@@ -1,0 +1,35 @@
+{
+  "name": "oidc-provider-dynamodb-adapter",
+  "version": "0.0.0",
+  "description": "Adapter for DyanmoDB that can be used in panva/node-oidc-provider.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "fallback": "babel ./lib/index.js --out-dir ./fallback",
+    "test": "node ./lib/index_test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AKIRA-MIYAKE/node-oidc-provider-dynamodb-adapter.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AKIRA-MIYAKE/node-oidc-provider-dynamodb-adapter/issues"
+  },
+  "homepage": "https://github.com/AKIRA-MIYAKE/node-oidc-provider-dynamodb-adapter#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.34",
+    "@babel/core": "^7.0.0-beta.34",
+    "@babel/polyfill": "^7.0.0-beta.34",
+    "@babel/preset-env": "^7.0.0-beta.34",
+    "@babel/register": "^7.0.0-beta.34",
+    "oidc-provider": "^2.8.0",
+    "whatwg-url": "^6.4.0"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.164.0",
+    "joi": "^13.0.2",
+    "vogels": "^2.2.0"
+  }
+}
